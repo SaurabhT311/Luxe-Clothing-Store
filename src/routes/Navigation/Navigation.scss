@@ -1,0 +1,35 @@
+.navigation {
+  height: 95px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  .logo-container {
+    height: 100%;
+    width: 70px;
+  }
+
+
+  .image {
+    margin: 20px;
+    margin-left: 15px;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 38px;
+   }
+
+  .navbar-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    font-size: 22px;
+    align-items: center;
+    justify-content: flex-end;
+
+    .nav-link {
+      padding: 10px 15px;
+      cursor: pointer;
+    }
+  }
+}

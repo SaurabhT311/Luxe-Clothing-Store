@@ -1,8 +1,8 @@
 import React from 'react'
-import CategoryItem from '../category-item/category-item'
-import './directory.scss'
+import CategoryItem from '../Category-Item/CategoryItem'
+import './Dashboard.scss'
 
-const Directory = ({ categories }) => {
+const Dashboard = ({ categories }) => {
   return (
     <div className='directory-container'>
       {categories.map(category => (
@@ -12,4 +12,4 @@ const Directory = ({ categories }) => {
   )
 }
 
-export default Directory
+export default Dashboard;

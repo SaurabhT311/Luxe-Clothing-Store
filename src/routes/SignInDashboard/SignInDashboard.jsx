@@ -3,19 +3,16 @@ import {
   createUserDocumentFromAuth
 } from '../../utils/Firebase/Firebase'
 import SignUp from '../../components/SignUp/SignUp'
+import SignIn from '../../components/SignIn/SignIn'
+import './SignInDashboard.scss';
 
 const SignInDashboard = () => {
 
-  const logGoogleUser = async () => {
-    const { user } = await signInWithGooglePopup()
-    const userDocRef = await createUserDocumentFromAuth(user)
-    console.log('response', user)
-  }
-
   return (
-    <div>
+    <div className='dashboard-container'>
       <h1>Sign In Page</h1>
-      <button onClick={logGoogleUser}>Sign In with google Popup</button>
+      {/* <button onClick={logGoogleUser}>Sign In with google Popup</button> */}
+      <SignIn />
       <SignUp />
     </div>
   )

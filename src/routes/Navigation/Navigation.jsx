@@ -1,5 +1,6 @@
 import React, { Fragment, useContext } from "react";
 import { Link, Outlet } from "react-router-dom";
+import CartIcon from "../../components/CartIcon/CartIcon";
 import { UserContext } from "../../contexts/userContext";
 import { signOutUser } from "../../utils/Firebase/Firebase";
 import "./Navigation.scss";
@@ -27,6 +28,7 @@ const Navigation = () => {
               SIGN IN
             </Link>
           )}
+          <CartIcon />
         </div>
       </div>
       <Outlet />

@@ -1,0 +1,29 @@
+.card-dropdown-container {
+    width: 240px;
+    height: 340px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 5;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 20px;
+    right: 40px;
+
+    .empty-message{
+        font-size: 18px;
+        margin: 50px auto;
+    }
+
+    .cart-items {
+        height: 340px;
+        display: flex;
+        flex-direction: column;
+        // overflow: scroll;
+    }
+
+    button {
+        margin-top: auto;
+    }
+}
